@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav.steps {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+nav.steps span {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+nav.steps .completed {
+    background: #4caf50;
+    color: white;
+}
+
+nav.steps .current {
+    background: #ffeb3b;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.education-form .form-group {
+    margin-bottom: 15px;
+}
+
+.education-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.education-form input,
+.education-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.education-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.education-form button:hover {
+    background-color: #45a049;
+}

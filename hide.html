@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic HTML Content</title>
+</head>
+<body>
+    <h1>Dynamic Content Example</h1>
+    <p id="content">This is the original content.</p>
+    <button onclick="changeContent()">Change Content</button>
+    <button onclick="hideContent()">Hide Content</button>
+    <button onclick="showContent()">Show Content</button>
+
+    <script>
+        function changeContent() {
+            // Select the HTML element to update
+            const contentElement = document.getElementById('content');
+            
+            // Change its content
+            contentElement.innerHTML = "The content has been dynamically updated!";
+        }
+
+        function hideContent() {
+            // Hide the content by setting its display to 'none'
+            const contentElement = document.getElementById('content');
+            contentElement.style.display = 'none';
+        }
+
+        function showContent() {
+            // Show the content by resetting its display to 'block'
+            const contentElement = document.getElementById('content');
+            contentElement.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

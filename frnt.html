@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        .form-section label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .form-section input, .form-section textarea, .form-section select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-section textarea {
+            resize: vertical;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Employee Form</h2>
+        <form>
+            <!-- Primary Info -->
+            <div class="form-section">
+                <h3>Primary Information</h3>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Education Details -->
+            <div class="form-section">
+                <h3>Education Details</h3>
+                <label for="qualification">Highest Qualification</label>
+                <input type="text" id="qualification" name="qualification" required>
+
+                <label for="university">University/Institute</label>
+                <input type="text" id="university" name="university" required>
+            </div>
+
+            <!-- Address Details -->
+            <div class="form-section">
+                <h3>Address Details</h3>
+                <label for="address">Current Address</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+
+            <!-- Bank Details -->
+            <div class="form-section">
+                <h3>Bank Details</h3>
+                <label for="account">Account Number</label>
+                <input type="text" id="account" name="account" required>
+
+                <label for="ifsc">IFSC Code</label>
+                <input type="text" id="ifsc" name="ifsc" required>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="form-section">
+                <h3>Technical Skills</h3>
+                <label for="skills">Skills (comma-separated)</label>
+                <input type="text" id="skills" name="skills" required>
+            </div>
+
+            <!-- Experience -->
+            <div class="form-section">
+                <h3>Experience</h3>
+                <label for="experience">Years of Experience</label>
+                <input type="number" id="experience" name="experience" required>
+            </div>
+
+            <!-- Contact -->
+            <div class="form-section">
+                <h3>Contact Information</h3>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

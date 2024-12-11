@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>simple html form</title>
+</head>
+<body>
+<form method="post">
+<input type="text" name="username" id="name" placeholder="abc@gmail.com" required>
+</form>
+</body>
+</html>
+
+
